@@ -29,7 +29,7 @@
  *
  * The compilation is a process of walking the DOM tree and trying to match DOM elements to
  * {@link ng.$compileProvider#directive directives}. For each match it
- * executes corresponding template function and collects the
+ * executes the corresponding template function and collects the
  * instance functions into a single template function which is then returned.
  *
  * The template function can then be used once to produce the view or as it is the case with
@@ -59,7 +59,7 @@
                 // compile the new DOM and link it to the current
                 // scope.
                 // NOTE: we only compile .childNodes so that
-                // we don't get into infinite loop compiling ourselves
+                // we don't get into an infinite loop compiling ourselves
                 $compile(element.contents())(scope);
               }
             );
