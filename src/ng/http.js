@@ -121,8 +121,8 @@ function $HttpProvider() {
   };
 
   /**
-   * Are ordered by request, i.e. they are applied in the same order as
-   * array on request, but reverse order on response.
+   * Are ordered by request, i.e. they are applied in the same order as the
+   * array, on request, but reverse order, on response.
    */
   var interceptorFactories = this.interceptors = [];
 
